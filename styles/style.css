@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
@@ -19,8 +19,6 @@
 .header__links-list {
     display: flex;
     gap: 32px;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
 }
 
 .header__links-list-item {
@@ -36,7 +34,6 @@
     width: 135px;
     height: 108px;
     margin-right: 150px;
-
 }
 
 .header__logo-image {
@@ -45,18 +42,15 @@
 
 .header__address {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    font-style: normal;
     line-height: 24.3px;
     white-space: nowrap;
 }
 
 .header__address a {
     color: #000;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
 }
 
 .cover {
@@ -73,7 +67,7 @@
 .overlay {
     position: absolute;
     z-index: 1;
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
@@ -180,7 +174,6 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 25px;
-    margin-bottom: 30px;
     list-style: none;
 }
 
@@ -194,7 +187,7 @@
     position: relative;
     color: #fff;
     font-family: Raleway, sans-serif;
-    text-decoration-line: none;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -206,6 +199,7 @@
     justify-content: space-between;
     width: 430px;
     height: 450px;
+    padding: 50px 40px;
 }
 
 .card_type_film,
@@ -236,13 +230,13 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
+    text-decoration: underline;
     text-underline-offset: 5px;
     text-transform: uppercase;
 }
 
 .card__text {
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
@@ -253,15 +247,8 @@
     height: 100%;
 }
 
-.card .overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 40px;
-}
-
 .lots__look-more-link {
-    margin-left: 40px;
+    inset: ;
     border-bottom: 1px solid #000;
     font-family: Raleway, sans-serif;
     font-weight: 400;
