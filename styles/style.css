@@ -1,3 +1,5 @@
+/* Шапка сайта*/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -58,7 +60,7 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
 }
-
+/*Секция с обложкой*/
 /* Стили для секции с обложкой */
 .cover {
     position: relative;
@@ -174,7 +176,7 @@
     background-color: #000;
 }
 
-/* Lots */
+/* Секция с лотами */
 
 .lots {
     position: relative;
@@ -281,7 +283,7 @@
     text-transform: lowercase;
 }
 
-/* About */
+/* Секция "Об аукционе" */
 
 .about {
     display: grid;
@@ -333,6 +335,8 @@
     font-weight: 400;
     font-size: 20px;
 }
+
+/* Подвал сайта */
 
 .footer {
     display: flex;
