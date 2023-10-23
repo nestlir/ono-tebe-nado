@@ -98,29 +98,38 @@
 
 /* Стили для текста с выравниванием и буквенным интервалом */
 .aligned-text {
+    letter-spacing: 0;
     text-align: left;
     text-transform: uppercase;
 }
 
 .aligned-text_center {
+    letter-spacing: 0;
     text-align: center;
     text-transform: uppercase;
 }
 
 .aligned-text_right {
-text-align: right;
-font-weight: 700;
-line-height: 100%; /* 100px */
-letter-spacing: 60px;
-text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
 }
 
-.letter-spacing-extended{
-    letter-spacing: 60px;
+.aligned-text_right .no-letter-spacing {
+    letter-spacing: 0;
 }
 
-.no-letter-spacing {
+.aligned-text .letter-spacing-extended,
+.aligned-text_center .letter-spacing-extended,
+.aligned-text_right .letter-spacing {
     letter-spacing: 30px;
+}
+
+.aligned-text .no-letter-spacing,
+.aligned-text_center .no-letter-spacing,
+.aligned-text_right .letter-spacing-extended {
+    letter-spacing: 60px;
 }
 
 .cover__description {
