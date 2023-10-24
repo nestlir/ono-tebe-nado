@@ -1,12 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 /* Шапка сайта*/
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1340px;
-    width: 100%;
-    height: 100%;
+    width: 1340px;
+    ;
+    min-height: 109px;
+    margin: 92px 50px;
 }
 
 .header__menu {
@@ -44,19 +53,12 @@
     width: 100%;
 }
 
-.address__address-text {
-    max-width: 200px;
-
-}
-
 .shared-address {
     display: flex;
     flex-direction: column;
-    word-wrap: break-word;
     color: #000;
-    text-align: left;
     font: 400 18px/24.3px 'Raleway', sans-serif;
-    white-space: nowrap;
+    text-align: left;
 }
 
 .shared-address a {
@@ -66,12 +68,11 @@
 }
 
 .shared-address p {
-    white-space: pre-line;
+    white-space: nowrap;
 }
 
 .shared-address .city {
-    white-space: normal;
-    /* Разрешить перенос внутри .city */
+    word-wrap: break-word;
 }
 
 
@@ -81,6 +82,7 @@
     position: relative;
     display: flex;
     width: 1440px;
+    min-height: 757px;
     overflow: hidden;
     color: #fff;
     text-align: center;
@@ -88,6 +90,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 /* Стили для оверлея */
 .overlay {
@@ -114,26 +117,17 @@
 
 /* Стили для текста с выравниванием и буквенным интервалом */
 .aligned-text {
-    letter-spacing: 0;
     text-align: left;
     text-transform: uppercase;
 }
 
 .aligned-text_center {
-    letter-spacing: 0;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .aligned-text_right {
     line-height: 100%;
-    letter-spacing: 0;
     text-align: right;
-    text-transform: uppercase;
-}
-
-.aligned-text_right .no-letter-spacing {
-    letter-spacing: 0;
 }
 
 .aligned-text .letter-spacing-extended,
@@ -148,6 +142,7 @@
     letter-spacing: 60px;
 }
 
+
 .cover__description {
     display: flex;
     justify-content: flex-end;
@@ -158,7 +153,7 @@
 
 .cover__description-text {
     justify-content: center;
-    gap: 78px;
+    gap: 70px;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -195,7 +190,6 @@
 .lots {
     position: relative;
     max-width: 100%;
-    height: auto;
     margin: 180px 50px;
 }
 
@@ -212,24 +206,21 @@
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
+    gap: 25px;
 }
 
 .lots__card-list-item {
-    width: calc(33.33% - 10px);
-    margin-right: 10px;
-    margin-bottom: 20px;
+    flex: 1;
+    /* Равномерное распределение пространства для всех элементов */
+    min-width: calc(33.33% - 25px);
+    /* Устанавливаем минимальную ширину для элементов (с учетом промежутков) */
 }
-
-/* Последний элемент в ряду (3-я карточка) */
-.lots__card-list-item:nth-child(3n) {
-    margin-right: 0;
-}
-
 
 .card {
     position: relative;
+    min-height: 450px;
+    width: 430px;
     color: #fff;
     font-family: Raleway, sans-serif;
     text-decoration: none;
@@ -237,38 +228,35 @@
 }
 
 .card .overlay {
-    position: absolute;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 430px;
-    height: 450px;
     padding: 50px 40px;
+
 }
 
-.card_type_film,
-.card_type_book,
-.card_type_picture {
+.card_type_film {
     display: flex;
-    width: 430px;
-    height: 450px;
-    overflow: hidden;
+    background-image: url(/images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
-.card_type_film {
-    background-image: url(/images/card-lot-01.jpg);
-}
-
 .card_type_book {
+    display: flex;
     background-image: url(/images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .card_type_picture {
+    display: flex;
     background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .card__title {
@@ -281,7 +269,6 @@
 }
 
 .card__text {
-    margin-bottom: 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
@@ -319,7 +306,7 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    margin: 0px 145px;
+    margin: 30px 145px;
     border-radius: 120px;
     background-color: #000;
 }
@@ -339,11 +326,11 @@
 
 .about__text {
     width: 885px;
-    height: 240px;
+    min-height: 240px;
 }
 
 .about__title {
-    margin-top: 100px;
+    margin-top: 135px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -368,8 +355,8 @@
     justify-content: space-between;
     align-items: center;
     width: 1340px;
-    height: 97px;
-    margin: 55px 50px;
+    min-height: 97px;
+    margin: 50px 50px;
 }
 
 .footer__menu {
@@ -404,12 +391,14 @@
 }
 
 .footer__social-list {
-    list-style: none;
-    padding: 0;
     display: flex;
-    gap: 16px;
+    gap: 48px;
+    width: 240px;
+    min-height: 48px;
+    margin: 0 0 50px 10px;
+
 }
 
 .footer__social-icon {
-    max-width: 5%;
+    max-width: 50%;
 }
