@@ -1,8 +1,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
@@ -86,7 +86,7 @@
     overflow: hidden;
     color: #fff;
     text-align: center;
-    background-image: url(/images/cover.jpg);
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -154,6 +154,7 @@
 .cover__description-text {
     justify-content: center;
     gap: 70px;
+    padding-right: 25px;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -161,7 +162,6 @@
     text-align: center;
     text-transform: uppercase;
     word-spacing: 18px;
-    padding-right: 25px;
 }
 
 .bet-button {
@@ -207,8 +207,8 @@
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     gap: 25px;
+    list-style: none;
 }
 
 .lots__card-list-item {
@@ -220,8 +220,8 @@
 
 .card {
     position: relative;
-    min-height: 450px;
     width: 430px;
+    min-height: 450px;
     color: #fff;
     font-family: Raleway, sans-serif;
     text-decoration: none;
@@ -231,15 +231,13 @@
 
 .card .overlay {
     display: flex;
-    overflow: hidden;
-    flex-direction: column;
     justify-content: space-between;
     padding: 50px 40px;
 }
 
 .card_type_film {
     display: flex;
-    background-image: url(/images/card-lot-01.jpg);
+    background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -247,7 +245,7 @@
 
 .card_type_book {
     display: flex;
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -282,7 +280,7 @@
 }
 
 .lots__look-more-link {
-    display: flex;
+    display: inline-flex;
     margin: 30px 0  0 40px;
     border-bottom: 0px solid #000;
     font-family: Raleway, sans-serif;
