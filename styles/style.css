@@ -161,6 +161,7 @@
     text-align: center;
     text-transform: uppercase;
     word-spacing: 18px;
+    padding-right: 25px;
 }
 
 .bet-button {
@@ -225,14 +226,15 @@
     font-family: Raleway, sans-serif;
     text-decoration: none;
     list-style: none;
+    
 }
 
 .card .overlay {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 40px;
-
 }
 
 .card_type_film {
@@ -280,8 +282,9 @@
 }
 
 .lots__look-more-link {
-    margin: 30px 0 0 40px;
-    border-bottom: 1px solid #000;
+    display: flex;
+    margin: 30px 0  0 40px;
+    border-bottom: 0px solid #000;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -306,7 +309,7 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    margin: 30px 145px;
+    margin: 0 145px;
     border-radius: 120px;
     background-color: #000;
 }
@@ -330,7 +333,7 @@
 }
 
 .about__title {
-    margin-top: 135px;
+    margin-top: 105px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -395,7 +398,7 @@
     gap: 48px;
     width: 240px;
     min-height: 48px;
-    margin: 0 0 50px 10px;
+    margin: 0 0 40px 10px;
 
 }
 

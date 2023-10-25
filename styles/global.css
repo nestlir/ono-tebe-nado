@@ -31,4 +31,5 @@ a {
 
 img {
   width: 100%;
+  all: inherit
 }
