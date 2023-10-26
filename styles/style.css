@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 /* Шапка сайта*/
@@ -12,14 +11,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1340px;
-    ;
-    min-height: 109px;
     margin: 92px 50px;
+    gap: 315px;
 }
 
 .header__menu {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     color: #000;
     font-family: Raleway, sans-serif;
@@ -43,10 +41,12 @@
 }
 
 .header__logo {
-    display: block;
+    display: flex;
+    align-items: center;
+    text-align: center;
     width: 135px;
     height: 108px;
-    margin-right: 150px;
+    margin: 0 0 0 -50px;
 }
 
 .header__logo-image {
@@ -78,62 +78,65 @@
 
 /*Секция с обложкой*/
 /* Стили для секции с обложкой */
+
 .cover {
     position: relative;
     display: flex;
     width: 1440px;
-    min-height: 757px;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
+    background-image: url(/images/cover.jpg);
     background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
-
-/* Стили для оверлея */
-.overlay {
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.cover__overlay {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 /* Стили для заголовка */
 .cover__title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
-    margin: 165px 50px 0 50px;
+    width: 100%;
+    margin: 165px 0 0 0;
     font-weight: 700;
     font-size: 100px;
     text-transform: uppercase;
 }
 
 /* Стили для текста с выравниванием и буквенным интервалом */
-.aligned-text {
-    text-align: left;
+.cover__text {
+    display: inline;
+    font-weight: 700;
+    font-size: 100px;
     text-transform: uppercase;
 }
 
+.aligned-text {
+  text-align: left;
+  text-transform: uppercase;
+}
+
 .aligned-text_center {
-    text-align: center;
+  text-align: center;
 }
 
 .aligned-text_right {
-    line-height: 100%;
-    text-align: right;
+  line-height: 100%;
+  text-align: right;
 }
 
 .aligned-text .letter-spacing-extended,
 .aligned-text_center .letter-spacing-extended,
 .aligned-text_right .letter-spacing {
     letter-spacing: 30px;
+
 }
 
 .aligned-text .no-letter-spacing,
@@ -142,17 +145,18 @@
     letter-spacing: 60px;
 }
 
-
+/* Стили для описания */
 .cover__description {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 135px;
-    margin-right: 50px;
+    margin: 136px 50px 50px 0;
 }
 
 .cover__description-text {
+    display: flex;
     justify-content: center;
+    align-items: center;
     gap: 70px;
     padding-right: 25px;
     font-family: Raleway, sans-serif;
@@ -164,7 +168,10 @@
     word-spacing: 18px;
 }
 
-.bet-button {
+/* Стили для кнопки ставки */
+.cover__bet-button {
+    width: auto;
+    height: 52px;
     margin-left: 55px;
     border: 1px solid #fff;
     padding: 12px 32px;
@@ -175,19 +182,18 @@
     background: none;
 }
 
-/* решила проверить интерактив :В, мне понравилось*/
-.bet-button:hover {
+/* Интерактивные стили для кнопки ставки */
+.cover__bet-button:hover {
     color: #000;
     background-color: #fff;
 }
 
-.bet-button:active {
+.cover__bet-button:active {
     color: #fff;
     background-color: #000;
 }
 
-/* Секция с лотами */
-
+/* Стили для секции с лотами */
 .lots {
     position: relative;
     max-width: 100%;
@@ -213,11 +219,10 @@
 
 .lots__card-list-item {
     flex: 1;
-    /* Равномерное распределение пространства для всех элементов */
     min-width: calc(33.33% - 25px);
-    /* Устанавливаем минимальную ширину для элементов (с учетом промежутков) */
 }
 
+/* Стили для карточки лота */
 .card {
     position: relative;
     width: 430px;
@@ -226,40 +231,19 @@
     font-family: Raleway, sans-serif;
     text-decoration: none;
     list-style: none;
-    
-}
-
-.card .overlay {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 40px;
-}
-
-.card_type_film {
-    display: flex;
-    background-image: url(../images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-.card_type_book {
-    display: flex;
-    background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
-.card_type_picture {
-    display: flex;
-    background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
+/* Стили для заголовка лота */
 .card__title {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 40px;
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
@@ -268,26 +252,45 @@
     text-transform: uppercase;
 }
 
+/* Стили для текста лота */
 .card__text {
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    left: 40px;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
+    word-wrap: break-word;
 }
 
+/* Стили для ссылки карточки лота */
 .card-link {
     display: block;
     height: 100%;
 }
 
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+/* Стили для ссылки "посмотреть больше" */
 .lots__look-more-link {
     display: inline-flex;
-    margin: 30px 0  0 40px;
+    margin: 30px 0 0 40px;
     border-bottom: 0px solid #000;
-    font-family: Raleway, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-underline-offset: 5px;
-    text-transform: lowercase;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    transition: background-color 0.25s ease-in-out;
 }
 
 /* Секция "Об аукционе" */
@@ -400,6 +403,12 @@
 
 }
 
-.footer__social-icon {
+.footer__social-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social-item {
     max-width: 50%;
 }
