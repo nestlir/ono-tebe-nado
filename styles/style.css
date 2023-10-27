@@ -383,7 +383,7 @@
 
 .footer__menu {
   display: flex;
-  align-items: center; 
+  align-items: center;
   padding: 0 0 10px 55px;
   font-weight: 400;
   font-size: 18px;
@@ -407,9 +407,9 @@
   padding-right: 40px;
 }
 
-.footer__menu-link { 
-  color: #000; 
-  text-underline-offset: 5px; 
+.footer__menu-link {
+  color: #000;
+  text-underline-offset: 5px;
 }
 
 .footer__social-list {
@@ -419,8 +419,8 @@
   min-height: 48px;
   margin: 0 0 10px 0;
   list-style: none;
-} 
+}
 
-.footer__social-icon { 
+.footer__social-icon {
   max-width: 50%;
 }
