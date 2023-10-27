@@ -92,7 +92,7 @@
 .cover {
   display: flex;
   width: 100%;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -295,15 +295,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 /* Стили для ссылки "посмотреть больше" */
@@ -368,6 +368,7 @@
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 20px;
+  text-align: justify;
 }
 
 .about__text-paragraph:last-child {
@@ -418,7 +419,7 @@
 
 .footer__social-list {
   display: flex;
-  gap: 48px;
+  gap: 8px;
   width: 240px;
   margin: 0 0 40px 10px;
 }
