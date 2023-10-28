@@ -76,10 +76,6 @@
   text-underline-offset: 5px;
 }
 
-.shared-address p {
-  white-space: nowrap;
-}
-
 .shared-address .city {
   word-wrap: break-word;
 }
@@ -179,7 +175,7 @@
 /* Стили для кнопки ставки */
 .cover__bet-button {
   width: auto;
-  height: 52px;
+  min-height: 52px;
   margin-left: 55px;
   border: 1px solid #fff;
   padding: 12px 32px;
@@ -377,7 +373,6 @@
   justify-content: space-between;
   align-items: center;
   width: 1340px;
-  min-height: 97px;
   margin: 50px 50px;
 } 
 
@@ -416,11 +411,10 @@
   display: flex;
   gap: 48px;
   width: 240px;
-  min-height: 48px;
   margin: 0 0 10px 0;
   list-style: none;
 }
 
 .footer__social-icon {
-  max-width: 50%;
+  width: 48px;
 }
