@@ -76,15 +76,21 @@
   text-underline-offset: 5px;
 }
 
+.shared-address p {
+  white-space: nowrap;
+}
+
 .shared-address .city {
   word-wrap: break-word;
 }
+
 
 /* Секция с обложкой */
 /* Стили для секции с обложкой */
 .cover {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
   color: #ffffff;
   background-image: url(../images/cover.jpg);
@@ -93,7 +99,7 @@
 }
 
 .overlay {
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -111,6 +117,7 @@
   padding: 0 50px 0 50px;
   font-weight: 700;
   font-size: 100px;
+  z-index: 1;
   text-transform: uppercase;
 }
 
@@ -155,6 +162,7 @@
   justify-content: flex-end;
   align-items: center;
   margin: 136px 50px 50px 0;
+  z-index: 1;
 }
 
 .cover__description-text {
@@ -223,29 +231,32 @@
 .lots__card-list-item {
   flex: 1;
   min-width: calc(33.33% - 25px);
+  width: 430px;
+
 }
 
 /* Стили для карточки лота */
+
 .card {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  width: 430px;
-  min-height: 450px;
-  padding: 50px 40px;
+  width: 100%;
+  height: 100%;
   color: #fff;
   font-family: Raleway, sans-serif;
   text-decoration: none;
   list-style: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover; /* Используйте cover, чтобы изображение заполнило всю область .card, сохраняя пропорции */
 }
 
 /* Стили для оверлея внутри карточки лота */
+
 .card::before {
   content: "";
   position: absolute;
@@ -255,7 +266,6 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Стили для заголовка лота */
@@ -265,6 +275,7 @@
   font-size: 22px;
   line-height: 120%;
   text-align: left;
+  padding: 50px 40px;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-transform: uppercase;
@@ -277,6 +288,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  padding: 50px 40px;
   text-align: left;
   word-wrap: break-word;
 }
