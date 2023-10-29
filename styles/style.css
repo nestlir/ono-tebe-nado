@@ -68,6 +68,7 @@
   color: #000;
   font: 400 18px/24.3px "Raleway", sans-serif;
   text-align: left;
+  width: 240px;
 }
 
 .shared-address a {
@@ -77,11 +78,7 @@
 }
 
 .shared-address p {
-  white-space: nowrap;
-}
-
-.shared-address .city {
-  word-wrap: break-word;
+  white-space: wrap;
 }
 
 /* Секция с обложкой */
