@@ -252,7 +252,7 @@
   list-style: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* Используйте cover, чтобы изображение заполнило всю область .card, сохраняя пропорции */
+  background-size: cover;
 }
 
 /* Стили для оверлея внутри карточки лота */
