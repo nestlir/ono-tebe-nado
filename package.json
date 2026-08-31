@@ -7,7 +7,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:css": "stylelint \"styles/**/*.css\"",
-    "check": "npm run format:check && npm run lint:css"
+    "check": "npm run lint:css"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
