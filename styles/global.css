@@ -1,13 +1,28 @@
+:root {
+  --color-background: #fff;
+  --color-text: #000;
+  --color-inverse: #fff;
+  --color-overlay: rgb(0 0 0 / 50%);
+  --font-family: "Raleway", Arial, sans-serif;
+  --page-max-width: 1440px;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  min-width: 1440px;
+  min-width: 320px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-family);
 }
 
 h1,
@@ -27,9 +42,40 @@ blockquote {
 
 a {
   color: inherit;
-  text-decoration: underline;
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
