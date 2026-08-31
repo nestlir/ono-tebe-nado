@@ -56,6 +56,11 @@ select {
   font: inherit;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
