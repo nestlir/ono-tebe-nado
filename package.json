@@ -1,0 +1,17 @@
+{
+  "name": "ono-tebe-nado",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A responsive editorial auction landing page built with semantic HTML and modern CSS.",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:css": "stylelint \"styles/**/*.css\"",
+    "check": "npm run format:check && npm run lint:css"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "stylelint": "^16.16.0",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}
