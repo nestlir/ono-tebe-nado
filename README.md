@@ -46,7 +46,8 @@ The repository includes:
 - **Stylelint** for CSS quality checks;
 - **EditorConfig** for editor-independent conventions;
 - **GitHub Actions** for automated CSS quality checks;
-- **GitHub Pages** for deployment.
+- **GitHub Pages** for deployment;
+- **Dependabot** for dependency and GitHub Actions updates.
 
 Run all checks:
 
@@ -93,6 +94,8 @@ The modernization pass adds several baseline accessibility practices:
 Every push and pull request runs automated CSS quality checks. Prettier is included for consistent local formatting.
 
 Pushes to `main` trigger the GitHub Pages deployment workflow.
+
+Dependabot is configured to monitor npm dependencies and GitHub Actions monthly.
 
 ## Project evolution
 
